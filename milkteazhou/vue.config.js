@@ -8,10 +8,10 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          autoprefixer(),
+          // autoprefixer(),
           pxtorem({
-            rootValue: 75,
-			minPixelValue:2,
+            rootValue: 37.5,
+			minPixelValue:1,
             propList: ['*']
           })
         ]
