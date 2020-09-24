@@ -1,49 +1,64 @@
 <template>
 	<div id="app">
 		<!-- 底部导航栏 -->
-		<van-tabbar :route="true" style="height: 48px;" inactive-color="#433127" :border="false">
-			<van-tabbar-item icon="home-o" to="/">
+		<van-tabbar :route="true" style="height: 48px;" inactive-color="#433127" active-color="#433127" :border="false">
+			<van-tabbar-item to="/">
 				<template #icon>
 					<img src="./assets/tabbar_index.png" style="width: 41px;height: 41px;" />
 				</template>
 			</van-tabbar-item>
-			<van-tabbar-item icon="home-o" size="20" to="/menu">
-				菜单
-				<template #icon>
-					<img src="./assets/tabbar_menu.png" style="width: 19.5px;height: 23.5px;" />
-				</template>
-			</van-tabbar-item>
-			<van-tabbar-item icon="search" to="/choiceness">
-				精选
-				<template #icon>
-					<img src="./assets/tabbar_choiceness.png" style="width: 29.5px;height: 26px;" />
-				</template>
-			</van-tabbar-item>
-			<van-tabbar-item icon="friends-o" to="/shoppcar">
-				购物车
-				<template #icon>
-					<img src="./assets/tabbar_shoppcar.png" style="width: 35px;height: 27px;" />
-				</template>
-			</van-tabbar-item>
-			<van-tabbar-item icon="setting-o" to="/mine">
-				我的
-				<template #icon>
-					<img src="./assets/tabbar_mine.png" style="width: 25px;height: 27px;" />
+			<van-tabbar-item size="20" :to="item.tabbarRouter" v-for="item in tabbarList" :key="item.id">
+				{{item.tabbarText}}
+				<template #icon="props">
+					<img :src="props.active ? item.tabbarActive : item.tabbarInactive" :style="item.tabbarSize" />
 				</template>
 			</van-tabbar-item>
 		</van-tabbar>
-		<router-view />
+			<router-view />
 	</div>
 </template>
 <script>
-export default {};
+	export default {
+		data() {
+			return {
+				active: 0,
+				tabbarList: [{
+					tabbarRouter: '/menu',
+					tabbarText:'菜单',
+					tabbarActive: require('./assets/tabbar_menu.png'),
+					tabbarInactive:require('./assets/tabbar-menu-no.png'),
+					tabbarSize:{'width':'25.5px','height':'26.5px'}
+					
+				}, {
+					tabbarRouter: '/choiceness',
+					tabbarText:'精选',
+					tabbarActive: require('./assets/tabbar_choiceness.png'),
+					tabbarInactive:require('./assets/tabbar-choiceness-no.png'),
+					tabbarSize:{'width':'29.5px','height':'29px'}
+				}, {
+					tabbarRouter: '/shoppcar',
+					tabbarText:'购物车',
+					tabbarActive: require('./assets/tabbar_shoppcar.png'),
+					tabbarInactive:require('./assets/tabbar-shoppcar-no.png'),
+					tabbarSize:{'width':'37.5px','height':'29px'}
+				}, {
+					tabbarRouter: '/mine',
+					tabbarText:'我的',
+					tabbarActive: require('./assets/tabbar_mine.png'),
+					tabbarInactive:require('./assets/tabbar-mine-no.png'),
+					tabbarSize:{'width':'27.5px','height':'28.5px'}
+				}]
+			};
+		},
+	};
 </script>
 <style>
-#app {
-	font-family: 'microsoft yahei';
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #212121;
-}
+	#app {
+		font-family: 'microsoft yahei';
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		color: #212121;
+		letter-spacing: 1.3px;
+	}
 </style>

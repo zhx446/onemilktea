@@ -2,35 +2,54 @@
 	<div class="shoppcar">
 		<!-- 导航栏 -->
 		<div class="shoppcar-nav">
-			<van-nav-bar :border="false">
+			<van-nav-bar :border="false" :fixed="true">
 				<template #title>
 					<img src="../assets/milktea.png" width="58px" height="23.5px" />
 				</template>
 				<template #right>
-					<img src="../assets/icon_more.png" width="19.5px" height="18px" class="nav-icon-more" />
+					<img src="../assets/icon_more.png" width="16px" height="16px" class="nav-icon-more" />
 				</template>
 			</van-nav-bar>
 		</div>
-		<img src="../assets/shoppcar_banner.png" width="355px" height="100.5px" class="shoppcar-banner" />
-		<!-- 订单列表 -->
-		<div class="shoppcar-order">
-			<div class="order-top">
-				<div class="order-title">饮品订单</div>
-				<img src="../assets/icon_delete.png" width="12.5px" height="13.5px" />
-			</div>
-			<div class="order-content">
-				<div class="order-left">
-					<div class="order-show">
-						<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
-						<img src="../assets/order-milktea.png" />
-						<div class="order-show-text">
-							<div>醉心黑摩卡</div>
-							<div>大/冰/默认奶油</div>
-							<div>￥18.00</div>
+		<div class="shoppcar-content">
+			<img src="../assets/shoppcar_banner.png" width="355px" height="100.5px" class="shoppcar-banner" />
+			<!-- 订单列表 -->
+			<div class="shoppcar-order">
+				<div class="order-top">
+					<div class="order-title">饮品订单</div>
+					<img src="../assets/icon_delete.png" width="12.5px" height="13.5px" />
+				</div>
+				<div class="order-content">
+					<div class="order-item" v-for="item in orderList" :key="item.id">
+						<div class="order-show">
+							<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
+							<img :src="item.orderImg" />
+							<div class="order-show-text">
+								<div>{{item.orderTitle}}</div>
+								<div>{{item.orderText}}</div>
+								<div>{{item.orderPrice}}</div>
+							</div>
+						</div>
+						<div class="order-choice">
+							<van-stepper v-model="item.orderMilkNum" theme="round" button-size="11.5" disable-input />
 						</div>
 					</div>
-					<div class="order-choice">
-						<van-stepper v-model="value" theme="round" button-size="11.5" disable-input />
+
+					<div class="order-child">
+						<div class="order-item2" v-for="item in orderList2" :key="item.id">
+							<div class="order-show2">
+								<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
+								<img :src="item.orderImg2" />
+								<div class="order-show-text">
+									<div>{{item.orderTitle2}}</div>
+									<div>{{item.orderText2}}</div>
+									<div>{{item.orderPrice2}}</div>
+								</div>
+							</div>
+							<div class="order-choice">
+								<van-stepper v-model="item.orderMilkNum2" theme="round" button-size="11.5" disable-input />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

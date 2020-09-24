@@ -1,3 +1,135 @@
-.choiceness {
-	color: red;
+/**************** nav strat ****************/
+.choiceness-nav {
+	margin-bottom: 46px;
 }
+
+.shoppcar-banner img {
+	margin: 0 auto;
+}
+
+.van-nav-bar {
+	line-height: 0;
+}
+
+.nav-icon-line {
+	width: 0.5px;
+	height: 14px;
+	background-color: #b1b1b1;
+}
+
+.nav-icon-sreach {
+	margin-right: 6.5px;
+}
+
+.nav-icon-more {
+	margin-left: 6.5px;
+}
+
+/**************** nav end ****************/
+
+/**************** tabs strat ****************/
+
+/*********** 关注 strat ***********/
+.choiceness-tabs-attention {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 48px;
+}
+
+.tabs-attention {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 16.5px;
+	padding: 11px 20px 11px 10px;
+	background-color: #fafaf1;
+}
+
+.attention-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.writer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.writer-name {
+	margin-left: 6.5px;
+	text-align: left;
+	line-height: 20px;
+}
+
+.writer-name div:nth-child(1) {
+	font-size: 12px;
+	color: #2d2a26;
+}
+
+.writer-name div:nth-child(2) {
+	font-size: 9px;
+	color: #595856;
+}
+
+.add-attention {
+	width: 55px;
+	height: 25px;
+	background-color: #ffa858;
+	border-radius: 5.5px;
+	font-size: 10px;
+	color: #ffffff;
+	line-height: 25px;
+}
+
+.writer-text {
+	text-align: left;
+}
+
+.writer-text img {
+	margin-left: 11px;
+}
+
+.writer-text div:first-child {
+	font-size: 9px;
+	letter-spacing: 0.9px;
+	color: #2d2a26;
+	line-height: 15px;
+	margin: 15.5px 0 11px 11px;
+}
+
+.attention-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	color: #2d2a26;
+	font-size: 9px;
+	margin-top: 19px;
+}
+
+.attention-bottom img:nth-child(1) {
+	margin-right: 7px;
+}
+
+.attention-bottom div:nth-child(1) {
+	margin-right: 20px;
+}
+
+.attention-icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*********** 关注 end ***********/
+
+
+
+/**************** tabs end ****************/
