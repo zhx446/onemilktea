@@ -32,23 +32,35 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	padding-bottom: 7.5px;
+	border-bottom: 0.5px solid #b5b5b5;
 }
 
 .order-show {
 	display: flex;
 	flex-direction: row;
-	width:75%;
+	align-items: center;
+	width: 70%;
+	text-align: left;
 }
 
 .order-choice {
-	width:25%;
+	width: 30%;
+	padding-right: 10px;
+}
+
+.order-show-text {
+	margin-left: 4.5px;
 }
 
 .order-show img:nth-child(2) {
 	width: 72.5px;
 	height: 69px;
 	border-radius: 5px;
-} 
+	margin-left: 18.5px;
+}
 
 .order-show-text div:nth-child(1) {
 	font-size: 13px;
@@ -56,6 +68,7 @@
 
 .order-show-text div:nth-child(2) {
 	font-size: 10px;
+	margin: 5px 0;
 }
 
 .order-show-text div:nth-child(3) {
