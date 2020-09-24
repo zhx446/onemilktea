@@ -54,6 +54,22 @@
 				</div>
 			</div>
 		</div>
+		<!-- 结算栏 -->
+		<div class="shoppcar-accounts">
+			<div class="accounts-left">
+				<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
+				<div>全选</div>
+				<div>不含运费</div>
+			</div>
+			<div class="accounts-center">
+				<div>合计：￥18.00</div>
+				<div>用券更便宜，共减免￥22</div>
+			</div>
+			<div class="accounts-right">
+				结算
+			</div>
+		</div>
+				
 	</div>
 </template>
 

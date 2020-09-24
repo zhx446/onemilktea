@@ -44,7 +44,8 @@ export default {
 				orderText2: '大/冰/默认奶油',
 				orderPrice2: '￥18.00',
 				orderMilkNum2:1
-			}]
+			}],
+			checked:false
 		};
 	},
 };
