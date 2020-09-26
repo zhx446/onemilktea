@@ -65,7 +65,7 @@
 				<div>合计：￥18.00</div>
 				<div>用券更便宜，共减免￥22</div>
 			</div>
-			<div class="accounts-right">
+			<div class="accounts-right" @click="toPayment">
 				结算
 			</div>
 		</div>

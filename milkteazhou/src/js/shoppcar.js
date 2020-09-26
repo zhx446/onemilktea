@@ -48,4 +48,9 @@ export default {
 			checked:false
 		};
 	},
+	methods:{
+		toPayment() {
+			this.$router.push('/payment');
+		}
+	}
 };

@@ -222,7 +222,7 @@
 }
 
 .activity-swipe {
-	margin: 12px 0 22px 0;
+	margin-top: 12px;
 }
 
 .activity-list {
@@ -234,3 +234,80 @@
 }
 
 /**************** 新人活动栏 end ****************/
+
+/**************** 本季推荐栏 start ****************/
+.season-recom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	margin-top: 18.5px;
+}
+
+.season-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.season-title div:first-child {
+	font-size: 10.4px;
+	font-weight: bold;
+	color: #262626;
+}
+
+.season-title {
+	margin-left: 7.5px;
+}
+
+.season-title div:first-child span {
+	color: #f6ae66;
+}
+
+.season-title div:last-child {
+	font-size: 6.3px;
+	color: #4b4848;
+}
+
+.index-banner {
+	margin-top: 14.5px;
+}
+
+.milktea-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+/**************** 本季推荐栏 end ****************/
+
+/**************** 底部二维码 start ****************/
+.index-code {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fafaf0;
+	padding: 23.5px 0 14px;
+	margin-top: 29px;
+}
+
+.index-code div:last-child {
+	width: 215px;
+	font-size: 8.3px;
+	color: #6a4846;
+	margin-top: 23px;
+}
+
+.code-img {
+	margin: 12.5px 0;
+}
+
+.code-wechat {
+	margin-left: 3.5px;
+}
+
+/**************** 底部二维码 end ****************/
