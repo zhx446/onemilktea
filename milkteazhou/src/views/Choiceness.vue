@@ -15,7 +15,7 @@
 		</div>
 		<!-- tabs标签切换页面 -->
 		<div class="choiceness-tabs">
-			<van-tabs v-model="active" :sticky="true" line-width="20.5px" color="#f6ae66" title-inactive-color="#2d2a26">
+			<van-tabs v-model="active" :sticky="true" offset-top="46px" line-width="20.5px" color="#f6ae66" title-inactive-color="#2d2a26">
 				<van-tab title="关注">
 					<template #default>
 						<div class="choiceness-tabs-attention">

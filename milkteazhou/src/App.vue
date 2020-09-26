@@ -60,5 +60,6 @@
 		text-align: center;
 		color: #212121;
 		letter-spacing: 1.3px;
+		margin-bottom: 50px;
 	}
 </style>

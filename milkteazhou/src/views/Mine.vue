@@ -54,33 +54,52 @@
 						<div class="all-title">全部订单</div>
 					</template>
 				</van-cell>
-				<van-grid :border="false" :column-num="5">
-					<van-grid-item text="待付款">
-						<template #icon>
-							<img src="../assets/mine-icon.png" width="52.5px" height="43px" />
+				<div class="mine-order-iconlist">
+					<div>
+						<img src="../assets/mine-icon.png" width="52.5px" height="43px" />
+						<div class="icon-size">待付款</div>
+					</div>
+					<div>
+						<img src="../assets/mine-icon2.png" width="52.5px" height="43px" />
+						<div class="icon-size">代发货</div>
+					</div>
+					<div>
+						<img src="../assets/mine-icon4.png" width="52.5px" height="43px" />
+						<div class="icon-size">已发货</div>
+					</div>
+					<div>
+						<img src="../assets/mine-icon3.png" width="52.5px" height="43px" />
+						<div class="icon-size">评价</div>
+					</div>
+					<div>
+						<img src="../assets/mine-icon5.png" width="52.5px" height="43px" />
+						<div class="icon-size">退款/售后</div>
+					</div>
+				</div>
+				<!-- banner -->
+				<img src="../assets/shoppcar_banner.png" width="355px" height="100.5px" />
+				<div class="bottom-cell">
+					<van-cell is-link :border="false" class="mine-order-title bottom-title-bg">
+						<template #title>
+							<div class="bottom-title">我的文文</div>
 						</template>
-					</van-grid-item>
-					<van-grid-item icon="photo-o" text="代发货">
-						<template #icon>
-							<img src="../assets/mine-icon2.png" width="52.5px" height="43px" />
+					</van-cell>
+					<van-cell is-link :border="false" class="mine-order-title bottom-title-bg">
+						<template #title>
+							<div class="bottom-title">我的订单</div>
 						</template>
-					</van-grid-item>
-					<van-grid-item icon="photo-o" text="已发货">
-						<template #icon>
-							<img src="../assets/mine-icon4.png" width="52.5px" height="43px" />
+					</van-cell>
+					<van-cell is-link :border="false" class="mine-order-title bottom-title-bg">
+						<template #title>
+							<div class="bottom-title">地址管理</div>
 						</template>
-					</van-grid-item>
-					<van-grid-item icon="photo-o" text="评价">
-						<template #icon>
-							<img src="../assets/mine-icon3.png" width="52.5px" height="43px" />
+					</van-cell>
+					<van-cell is-link :border="false" class="mine-order-title bottom-title-bg">
+						<template #title>
+							<div class="bottom-title">设置</div>
 						</template>
-					</van-grid-item>
-					<van-grid-item icon="photo-o" text="退款/售后">
-						<template #icon>
-							<img src="../assets/mine-icon5.png" width="52.5px" height="43px" />
-						</template>
-					</van-grid-item>
-				</van-grid>
+					</van-cell>
+				</div>
 			</div>
 		</div>
 	</div>

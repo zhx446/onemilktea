@@ -1,3 +1,135 @@
-.menu {
-	color: red;
+/**************** nav strat ****************/
+.menu-nav {
+	margin-bottom: 46px;
 }
+
+.shoppcar-banner img {
+	margin: 0 auto;
+}
+
+.van-nav-bar {
+	line-height: 0;
+}
+
+.nav-icon-line {
+	width: 0.5px;
+	height: 14px;
+	background-color: #b1b1b1;
+}
+
+.nav-icon-sreach {
+	margin-right: 6.5px;
+}
+
+.nav-icon-more {
+	margin-left: 6.5px;
+}
+
+.menu-city {
+	font-size: 10.4px;
+	color: #b1b1b1;
+	margin: 0px 0px 1px 6.5px;
+}
+
+/**************** nav end ****************/
+
+/**************** 菜单栏 start ****************/
+.menu-sidebar {
+	width: 37.3%;
+}
+
+.van-sidebar-item--select,
+.van-sidebar-item--select:active {
+	background-color: #fdfcea !important;
+}
+
+.menu-siderbar-item {
+	color: #2d2a26;
+	font-size: 16.7px;
+	background-color: #FFFFFF;
+	width: 125px;
+	text-align: center;
+	line-height: 83px;
+	padding: 0;
+}
+
+.van-sidebar-item--select::before {
+	width: 44.5px;
+	height: 0.5px;
+	background-color: #f6ae66;
+	position: absolute;
+	top: 71%;
+	left: 34%;
+}
+
+.menu-order {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15.5px;
+}
+
+.menu-order-list {
+	width: 62.5%;
+	text-align: left;
+	margin-left: 21.5px;
+	margin-right: 11.5px;
+}
+
+.list-title {
+	width: 64.5px;
+	height: 21px;
+	background-color: #fdfcea;
+	font-size: 10.4px;
+	color: #2d2a26;
+	text-align: center;
+	line-height: 21px;
+	margin-bottom: 9px;
+}
+
+.milktea-msg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 23px;
+}
+
+.msg-content {
+	margin-left: 4px;
+}
+
+.msg-content div:nth-child(1) {
+	font-size: 12.5px;
+}
+
+.msg-content div:nth-child(2) {
+	font-size: 8.3px;
+	color: #65675e;
+}
+
+.msg-content div:nth-child(3) {
+	font-size: 6.3px;
+	color: #969298;
+}
+
+.msg-content div:nth-child(4) {
+	font-size: 12.5px;
+	color: #f93446;
+}
+
+.msg-rmb {
+	font-size: 8.3px;
+}
+
+.msg-right {
+	width: 38.5px;
+	height: 15px;
+	border-radius: 15px;
+	border: solid 1.4px #f6ae66;
+	font-size: 6.3px;
+	color: #f6ae66;
+	text-align: center;
+	line-height: 15px;
+}
+
+/**************** 菜单栏 end ****************/
