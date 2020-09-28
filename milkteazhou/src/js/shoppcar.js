@@ -51,6 +51,9 @@ export default {
 	methods:{
 		toPayment() {
 			this.$router.push('/payment');
+		},
+		toDetail() {
+			this.$router.push('/milkteadetail');
 		}
 	}
 };

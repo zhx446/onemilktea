@@ -20,7 +20,7 @@
 					<img src="../assets/icon_delete.png" width="12.5px" height="13.5px" />
 				</div>
 				<div class="order-content">
-					<div class="order-item" v-for="item in orderList" :key="item.id">
+					<div class="order-item" v-for="item in orderList" :key="item.id" @click="toDetail">
 						<div class="order-show">
 							<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
 							<img :src="item.orderImg" />

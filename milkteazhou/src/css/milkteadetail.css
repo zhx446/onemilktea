@@ -1,0 +1,18 @@
+.milkteadetail {
+	background-color: #F5F5F5;
+}
+
+.show-img {
+	margin-top: -33px;
+}
+
+.detail-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+.detail-nav img {
+	z-index: 1;
+}
