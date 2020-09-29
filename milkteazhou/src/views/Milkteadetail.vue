@@ -42,7 +42,9 @@
 			</div>
 		</div>
 		<div class="detail-text">
-			商品详情： <br />【探月50年主题推荐款】独特的黑糖风味拿铁，佐以香滑Q嫩的黑糖口味寒天晶球，创造出层次丰富的美妙口感，一起碰撞咖啡宇宙的无限可能。
+			商品详情：
+			<br />
+			【探月50年主题推荐款】独特的黑糖风味拿铁，佐以香滑Q嫩的黑糖口味寒天晶球，创造出层次丰富的美妙口感，一起碰撞咖啡宇宙的无限可能。
 			*本产品不含任何陨石成分，请放心饮用，建议搅拌后饮用。 主要原材料：浓缩咖啡、黑糖味寒天晶球、牛奶、黑糖调味糖浆、原味调味糖浆、可选择添加搅打奶油（含香草风味糖浆）
 			本产品仅供冷饮，图片仅供参考，请以实物为准。寒天晶球切勿一口吞食，儿童禁食。
 		</div>
@@ -57,6 +59,13 @@
 				<div>冰+半糖+无奶油+大杯</div>
 			</div>
 			<div class="now-buy">立即购买</div>
+		</div>
+		<!-- 为你推荐栏 -->
+		<div class="detail-recommend">
+			<van-divider :hairline="false" :style="{ color: '#2d2a26',fontSize: '18px', borderColor: '#f77f00', padding: '0 14.5px',margin:'36px 0 18.5px' }">为你推荐</van-divider>
+			<div class="detail-milk">
+				<img src="milktea" />
+			</div>
 		</div>
 	</div>
 </template>
