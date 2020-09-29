@@ -2,8 +2,13 @@
 	background-color: #F5F5F5;
 }
 
+/**************** 顶部和导航图片 strat ****************/
+.milkteadetail {
+	background-color: #F5F5F5;
+}
+
 .show-img {
-	margin-top: -33px;
+	margin-top: -55px;
 }
 
 .detail-nav {
@@ -11,8 +16,150 @@
 	flex-direction: row;
 	justify-content: space-between;
 	position: relative;
+	margin: 10px;
 }
 
 .detail-nav img {
 	z-index: 1;
 }
+
+.detail-share img {
+	margin-right: 10px;
+}
+
+/**************** 顶部和导航图片 end ****************/
+
+/**************** 奶茶详情 strat ****************/
+.detail-title {
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: #ffffff;
+	text-align: left;
+	font-size: 20px;
+	padding: 13.5px 10px;
+	margin: 13px 10px;
+}
+
+.detail-title div:last-child {
+	font-size: 16px;
+}
+
+.detail-choice {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 16px;
+	background-color: #FFFFFF;
+	margin: 0 10px;
+	border-radius: 12px;
+	padding: 10px;
+}
+
+.choice {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	line-height: 29.5px;
+	margin-bottom: 16px;
+}
+
+.choice div:hover:not(:first-child) {
+	border: solid 1px #59493f;
+	background-color: #FFFFFF;
+}
+
+.choice span {
+	margin-right: 15px;
+}
+
+.choice div:not(:first-child) {
+	height: 29.5px;
+	background-color: #eeeeee;
+	border-radius: 29.5px;
+	text-align: center;
+	margin-left: 7.5px;
+	padding: 0px 20px;
+}
+
+.detail-text {
+	margin: 10px;
+	background-color: #FFFFFF;
+	font-size: 13.3px;
+	border-radius: 12px;
+	padding: 13px;
+	text-align: left;
+	line-height: 20px;
+}
+
+.detail-pay {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+.now-buy {
+	width: 126.5px;
+	height: 34px;
+	background-color: #f05922;
+	border-radius: 15px;
+	font-size: 17.3px;
+	color: #FFFFFF;
+	line-height: 34px;
+	text-align: center;
+}
+
+.pay-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.pay-price {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.pay-price div:nth-child(1) {
+	font-size: 17.3px;
+	color: #fd4444;
+}
+
+.pay-price div:nth-child(2) {
+	color: #b5b5b5;
+	font-size: 14px;
+}
+
+.pay-price div:nth-child(3) {
+	width: 24px;
+	border-bottom: 2px solid #b5b5b5;
+	margin-left: -23px;
+	margin-bottom: 2px;
+}
+
+.pay-price div:nth-child(4) {
+	width: 74px;
+	height: 25.5px;
+	border: solid 1.3px #59493f;
+	border-radius: 25.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** 奶茶详情 end ****************/
