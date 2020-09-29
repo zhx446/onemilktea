@@ -54,7 +54,7 @@
 				<van-tab title="最新">内容 3</van-tab>
 			</van-tabs>
 		</div>
-
+		<tabbar></tabbar>
 	</div>
 </template>
 

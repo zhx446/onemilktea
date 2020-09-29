@@ -1,4 +1,5 @@
 import Milktea from '@/components/Milktea.vue'
+import Tabbar from '@/components/Tabbar.vue'
 export default {
 	data() {
 		return {
@@ -138,6 +139,7 @@ export default {
 		};
 	},
 	components: {
-		Milktea
+		Milktea,
+		Tabbar
 	},
 };

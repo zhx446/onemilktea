@@ -147,7 +147,7 @@
 			<div>版权所有：lalalalal餐饮管理有限公司
 				地址：广西啦啦啦啦啦啦咩咩咩咩米米地址</div>
 		</div>
-
+		<tabbar></tabbar>
 	</div>
 </template>
 

@@ -158,6 +158,39 @@
 /**************** 奶茶详情 end ****************/
 
 /**************** 为你推荐栏 start ****************/
+.recom-for {
+	margin: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
+.detail-milk {
+	background-color: #FFFFFF;
+	text-align: left;
+	font-size: 18px;
+	width: 166.5px;
+	border-radius: 12px;
+	margin-bottom: 17px;
+}
+
+.detail-milk img {
+	margin-bottom: 5px;
+}
+
+.detail-milk div:nth-child(1) {
+	margin-left: 3.5px;
+}
+
+.detail-price {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 19px;
+	color: #f93446;
+	margin: 8px 5.5px 14px -5px;
+}
 
 /**************** 为你推荐栏 end ****************/

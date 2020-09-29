@@ -69,7 +69,7 @@
 				结算
 			</div>
 		</div>
-				
+		<tabbar></tabbar>		
 	</div>
 </template>
 

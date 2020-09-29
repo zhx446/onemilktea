@@ -1,3 +1,4 @@
+import Tabbar from '@/components/Tabbar.vue'
 export default {
 	data() {
 		return {
@@ -41,4 +42,7 @@ export default {
 			}]
 		};
 	},
+	components: {
+		Tabbar
+	}
 };

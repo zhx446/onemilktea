@@ -63,8 +63,15 @@
 		<!-- 为你推荐栏 -->
 		<div class="detail-recommend">
 			<van-divider :hairline="false" :style="{ color: '#2d2a26',fontSize: '18px', borderColor: '#f77f00', padding: '0 14.5px',margin:'36px 0 18.5px' }">为你推荐</van-divider>
-			<div class="detail-milk">
-				<img src="milktea" />
+			<div class="recom-for">
+				<div class="detail-milk" v-for="item in recomList" :key="item.id">
+					<img :src="item.recomImg" width="166.5px" height="200px" />
+					<div>{{item.recomTitle}}</div>
+					<div class="detail-price">
+						<div>￥{{item.price}}</div>
+						<img src="../assets/icon-to.png" width="21px" height="14px" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
