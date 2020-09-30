@@ -35,5 +35,10 @@ export default {
 				price:30
 			}]
 		};
+	},
+	methods:{
+		toDetail() {
+			this.$router.go(-1)
+		}
 	}
 };

@@ -135,6 +135,10 @@
 	margin-right: 7px;
 }
 
+.check-all {
+	font-size: 11px;
+}
+
 .accounts-left div:last-child {
 	font-size: 9px;
 	color: #817c7c;
@@ -147,10 +151,9 @@
 }
 
 .accounts-center div:last-child {
-	width: 135px;
 	height: 15px;
 	border: solid 0.3px #6a4846;
-	font-size: 7px;
+	font-size: 5px;
 	color: #6a4846;
 	line-height: 15px;
 	margin: 5.5px 0 8.5px;

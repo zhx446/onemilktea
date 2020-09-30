@@ -14,8 +14,8 @@
 				<van-checkbox v-model="checked" icon-size="18px" checked-color="#f6ae66" shape="square"></van-checkbox>
 				<div>登录注册代表同意《用户协议》《隐私协议》</div>
 			</div>
-			<button class="login-btn">登录</button>
-			<div>注册</div>
+			<button class="login-btn" @click="toIndex">登录</button>
+			<div @click="toRegister">注册</div>
 		</div>
 		<img src="../assets/login-bg2.png" width="100%" height="667px" />
 	</div>

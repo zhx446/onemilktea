@@ -58,7 +58,7 @@
 		<div class="shoppcar-accounts">
 			<div class="accounts-left">
 				<img src="../assets/order_circle.png" width="14.5px" height="14.5px" />
-				<div>全选</div>
+				<div class="check-all">全选</div>
 				<div>不含运费</div>
 			</div>
 			<div class="accounts-center">

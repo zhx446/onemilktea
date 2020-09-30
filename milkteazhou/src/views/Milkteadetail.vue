@@ -3,7 +3,7 @@
 		<!-- 顶部和导航图片 -->
 		<div class="detail-top">
 			<div class="detail-nav">
-				<img src="../assets/icon-cha.png" width="30px" height="30px" />
+				<img src="../assets/icon-cha.png" width="30px" height="30px" @click="toDetail"/>
 				<div class="detail-share">
 					<img src="../assets/icon-share.png" width="30px" height="30px" />
 					<img src="../assets/icon-like.png" width="30px" height="30px" />

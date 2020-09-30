@@ -21,27 +21,49 @@
 		<img src="../assets/menu-banner.png" width="100%" height="118px" class="shoppcar-banner" />
 		<!-- 菜单栏 -->
 		<div class="menu-order">
-			<van-sidebar v-model="activeKey" class="menu-sidebar">
-				<van-sidebar-item title="经典饮品" class="menu-siderbar-item" />
-				<van-sidebar-item title="茶的碰撞" class="menu-siderbar-item" />
-				<van-sidebar-item title="醇香奶茶" class="menu-siderbar-item" />
-				<van-sidebar-item title="100%原果汁" class="menu-siderbar-item" />
-				<van-sidebar-item title="大师咖啡" class="menu-siderbar-item" />
-			</van-sidebar>
-			<!-- 选择奶茶列表 -->
-			<div class="menu-order-list">
-				<div class="list-title">经典奶茶</div>
-				<div class="milktea-msg" v-for="item in menuList" :key="item.id">
-					<img :src="item.milkImg" width="59.5px" height="55px" />
-					<div class="msg-content">
-						<div>{{item.milkTitle}}</div>
-						<div>{{item.milkDes}}</div>
-						<div>{{item.milkSell}}</div>
-						<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+			<van-tree-select height="100%" :items="items" :main-active-index.sync="active" class="order-select">
+				<template #content>
+					<div class="menu-order-list" v-if="active === 0">
+						<div class="list-title">经典奶茶</div>
+						<div class="milktea-msg" v-for="item in menuList" :key="item.id">
+							<img :src="item.milkImg" width="59.5px" height="55px" />
+							<div class="msg-content">
+								<div>{{item.milkTitle}}</div>
+								<div>{{item.milkDes}}</div>
+								<div>{{item.milkSell}}</div>
+								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+							</div>
+							<div class="msg-right">选规格</div>
+						</div>
 					</div>
-					<div class="msg-right">选规格</div>
-				</div>
-			</div>
+					<div class="menu-order-list" v-if="active === 1">
+						<div class="list-title">经典奶茶</div>
+						<div class="milktea-msg" v-for="item in menuList" :key="item.id">
+							<img :src="item.milkImg" width="59.5px" height="55px" />
+							<div class="msg-content">
+								<div>{{item.milkTitle}}</div>
+								<div>{{item.milkDes}}</div>
+								<div>{{item.milkSell}}</div>
+								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+							</div>
+							<div class="msg-right">选规格</div>
+						</div>
+					</div>
+					<div class="menu-order-list" v-if="active === 2">
+						<div class="list-title">经典奶茶</div>
+						<div class="milktea-msg" v-for="item in menuList" :key="item.id">
+							<img :src="item.milkImg" width="59.5px" height="55px" />
+							<div class="msg-content">
+								<div>{{item.milkTitle}}</div>
+								<div>{{item.milkDes}}</div>
+								<div>{{item.milkSell}}</div>
+								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+							</div>
+							<div class="msg-right">选规格</div>
+						</div>
+					</div>
+				</template>
+			</van-tree-select>
 		</div>
 		<tabbar></tabbar>
 	</div>
