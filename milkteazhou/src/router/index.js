@@ -38,6 +38,16 @@ const routes = [{
 		path: '/milkteadetail',
 		name: 'Milkteadetail',
 		component: () => import('../views/Milkteadetail.vue')
+	},
+	{
+		path: '/setting',
+		name: 'Setting',
+		component: () => import('../views/Setting.vue')
+	},
+	{
+		path: '/login',
+		name: 'Login',
+		component: () => import('../views/Login.vue')
 	}
 ]
 

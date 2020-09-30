@@ -14,13 +14,5 @@
 		text-align: center;
 		color: #212121;
 		letter-spacing: 1.3px;
-		margin-bottom: 50px;
 	}
-	
-	.tabbar {
-		width: 100%;
-		position: fixed;
-		bottom: 0;
-		z-index: 1;
-	} 
 </style>

@@ -96,7 +96,7 @@
 					</van-cell>
 					<van-cell is-link :border="false" class="mine-order-title bottom-title-bg">
 						<template #title>
-							<div class="bottom-title">设置</div>
+							<div class="bottom-title" @click="toSetting">设置</div>
 						</template>
 					</van-cell>
 				</div>
