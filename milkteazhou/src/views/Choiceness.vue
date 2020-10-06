@@ -19,7 +19,7 @@
 				<van-tab title="关注">
 					<template #default>
 						<div class="choiceness-tabs-attention">
-							<div class="tabs-attention" v-for="item in attentionList" :key="item.id">
+							<div class="tabs-attention" v-for="(item,index) in attentionList" :key="item.id">
 								<div class="attention-top">
 									<div class="writer">
 										<img :src="item.headImg" width="58.5px" height="58.5px" />
@@ -28,7 +28,7 @@
 											<div>{{item.sendTime}}</div>
 										</div>
 									</div>
-									<div class="add-attention">+关注</div>
+									<div class="add-attention" @click="attention(index)" ref="atten">{{item.attenText}}</div>
 								</div>
 								<div class="writer-text">
 									<div>
@@ -42,9 +42,10 @@
 										<div>{{item.zanNum}}</div>
 									</div>
 									<div class="attention-icon">
-										<img src="../assets/icon-zan.png" width="21px" height="21px" />
+										<img src="../assets/icon-zan.png" width="21px" height="21px" @click="addZan(index)" />
 										<div>{{item.commentNum}}</div>
 									</div>
+									<van-icon name="cross" size="17" color="#757574" @click="deleteDis(index)" />
 								</div>
 							</div>
 						</div>

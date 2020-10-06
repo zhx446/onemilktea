@@ -41,6 +41,7 @@
 .van-sidebar-item--select,
 .van-sidebar-item--select:active {
 	background-color: #fdfcea !important;
+	padding-bottom: 25px;
 }
 
 .menu-siderbar-item {
@@ -70,7 +71,7 @@
 }
 
 .order-select {
-	width:100%;
+	width: 100%;
 }
 
 .menu-order-list {

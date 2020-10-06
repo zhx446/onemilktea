@@ -6,7 +6,7 @@
 			</template>
 			<template #left>
 				<van-icon name="arrow-left" color="#fff" size="18"/>
-				<div class="set-left">资产</div>
+				<div class="set-left">返回</div>
 			</template>
 		</van-nav-bar>
 		<div class="setting-cells">

@@ -63,23 +63,38 @@
 	margin-bottom: 16px;
 }
 
-.choice div:hover:not(:first-child) {
+.activeSpec {
 	border: solid 1px #59493f;
-	background-color: #FFFFFF;
+	background-color: #f6ae66;
+	height: 29.5px;
+	border-radius: 29.5px;
+	text-align: center;
+	margin-left: 7.5px;
+	padding: 0px 20px;
+}
+
+.spec {
+	height: 29.5px;
+	background-color: #fff;
+	border: solid 1px #59493f;
+	border-radius: 29.5px;
+	text-align: center;
+	margin-left: 7.5px;
+	padding: 0px 20px;
 }
 
 .choice span {
 	margin-right: 15px;
 }
 
-.choice div:not(:first-child) {
+/* .choice div:not(:first-child) {
 	height: 29.5px;
 	background-color: #eeeeee;
 	border-radius: 29.5px;
 	text-align: center;
 	margin-left: 7.5px;
 	padding: 0px 20px;
-}
+} */
 
 .detail-text {
 	margin: 10px;

@@ -39,7 +39,7 @@
 			</div>
 
 			<!-- 订单列表2 -->
-			<div class="payment-order">
+			<!-- <div class="payment-order">
 				<div class="payment-order-list" v-for="item in paymentList2" :key="item.id">
 					<div class="order-list-left">
 						<img :src="item.milkImg2" width="70px" height="67px" />
@@ -54,7 +54,7 @@
 						<div>{{ item.milkTip2 }}</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- 支付栏 -->
 			<div class="pay-content">
@@ -103,6 +103,11 @@
 					<van-checkbox v-model="checkedAgree" checked-color="#f78000" shape="square">我已阅读并同意《支付协议》</van-checkbox>
 					<div>温馨提示：仅支持开具电子发票，订单完<br/>成后前往发票管理中开具</div>
 				</div>
+			</div>
+			
+			<div class="pay-bottom">
+				<div>￥28</div>
+				<button type="default" @click="payment">支付</button>
 			</div>
 		</div>
 	</div>

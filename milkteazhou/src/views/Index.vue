@@ -23,10 +23,10 @@
 					<img src="../assets/index-banner3.png" width="100%" height="210.5px" />
 				</van-swipe-item>
 				<van-swipe-item>
-					<img src="../assets/index-banner3.png" width="100%" height="210.5px" />
+					<img src="../assets/index-banner2.png" width="100%" height="210.5px" />
 				</van-swipe-item>
 				<van-swipe-item>
-					<img src="../assets/index-banner3.png" width="100%" height="210.5px" />
+					<img src="../assets/index-banner.png" width="100%" height="210.5px" />
 				</van-swipe-item>
 			</van-swipe>
 		</div>

@@ -33,31 +33,31 @@
 								<div>{{item.milkSell}}</div>
 								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
 							</div>
-							<div class="msg-right">选规格</div>
+							<div class="msg-right" @click="toDetail">选规格</div>
 						</div>
 					</div>
 					<div class="menu-order-list" v-if="active === 1">
-						<div class="list-title">经典奶茶</div>
-						<div class="milktea-msg" v-for="item in menuList" :key="item.id">
-							<img :src="item.milkImg" width="59.5px" height="55px" />
+						<div class="list-title">茶的碰撞</div>
+						<div class="milktea-msg" v-for="item in menuList2" :key="item.id">
+							<img :src="item.milkImg2" width="59.5px" height="55px" />
 							<div class="msg-content">
-								<div>{{item.milkTitle}}</div>
-								<div>{{item.milkDes}}</div>
-								<div>{{item.milkSell}}</div>
-								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+								<div>{{item.milkTitle2}}</div>
+								<div>{{item.milkDes2}}</div>
+								<div>{{item.milkSell2}}</div>
+								<div><span class="msg-rmb">￥</span>{{item.milkMoney2}}</div>
 							</div>
 							<div class="msg-right">选规格</div>
 						</div>
 					</div>
 					<div class="menu-order-list" v-if="active === 2">
-						<div class="list-title">经典奶茶</div>
-						<div class="milktea-msg" v-for="item in menuList" :key="item.id">
-							<img :src="item.milkImg" width="59.5px" height="55px" />
+						<div class="list-title">醇香奶茶</div>
+						<div class="milktea-msg" v-for="item in menuList3" :key="item.id">
+							<img :src="item.milkImg3" width="59.5px" height="55px" />
 							<div class="msg-content">
-								<div>{{item.milkTitle}}</div>
-								<div>{{item.milkDes}}</div>
-								<div>{{item.milkSell}}</div>
-								<div><span class="msg-rmb">￥</span>{{item.milkMoney}}</div>
+								<div>{{item.milkTitle3}}</div>
+								<div>{{item.milkDes3}}</div>
+								<div>{{item.milkSell3}}</div>
+								<div><span class="msg-rmb">￥</span>{{item.milkMoney3}}</div>
 							</div>
 							<div class="msg-right">选规格</div>
 						</div>

@@ -42,11 +42,12 @@
 .address-right {
 	width: 108.5px;
 	height: 30px;
-	background-image: linear-gradient(-72deg,
-		#faa953 0%,
-		#f6f3ec 100%);
+	background-color: #f6ae66;
 	border-radius: 30px;
 	color: #fff;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
 }
 
 
@@ -206,5 +207,27 @@
 	padding-bottom: 10px;
 }
 
+.pay-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	margin: 0px 10px;
+	padding-bottom: 30px;
+}
+
+.pay-bottom div:first-child {
+	color: #fd4444;
+}
+
+.pay-bottom button {
+	background-color: #ffaa00;
+	color: #fff;
+	border: 0;
+	width: 100px;
+	height: 33px;
+	border-radius: 33px;
+}
 
 /**************** 支付栏 end ****************/

@@ -3,10 +3,11 @@
 		<!-- 顶部和导航图片 -->
 		<div class="detail-top">
 			<div class="detail-nav">
-				<img src="../assets/icon-cha.png" width="30px" height="30px" @click="toDetail"/>
+				<img src="../assets/icon-cha.png" width="30px" height="30px" @click="toDetail" />
 				<div class="detail-share">
-					<img src="../assets/icon-share.png" width="30px" height="30px" />
-					<img src="../assets/icon-like.png" width="30px" height="30px" />
+					<img src="../assets/icon-share.png" width="30px" height="30px" @click="showShare = true" />
+					<van-share-sheet v-model="showShare" title="立即分享给好友" :options="options" @select="onSelect" />
+					<img src="../assets/icon-like.png" width="30px" height="30px" @click="addLike"/>
 				</div>
 			</div>
 			<img src="../assets/milktea26.png" width="100%" height="282px" class="show-img" />
@@ -19,26 +20,26 @@
 		<div class="detail-choice">
 			<div class="choice">
 				<div>温度</div>
-				<div>冰</div>
-				<div>加冰</div>
+				<div v-bind:class="[isActive ? activeClass : 'spec', 'activeSpec']" @click="pitchOn(1)">冰</div>
+				<div class="spec">加冰</div>
 			</div>
 			<div class="choice">
 				<div>糖度</div>
-				<div>全糖</div>
-				<div>七分糖</div>
-				<div>半分糖</div>
+				<div v-bind:class="[isActive2 ? activeClass : 'spec', 'activeSpec']" @click="pitchOn(2)">全糖</div>
+				<div class="spec">七分糖</div>
+				<div class="spec">半分糖</div>
 			</div>
 			<div class="choice">
 				<div>奶油</div>
-				<div>无奶油</div>
-				<div>加奶油</div>
+				<div v-bind:class="[isActive3 ? activeClass : 'spec', 'activeSpec']" @click="pitchOn(3)">无奶油</div>
+				<div class="spec">加奶油</div>
 			</div>
 			<div class="choice">
 				<div>选杯</div>
-				<div>大</div>
-				<div>中</div>
-				<div>半</div>
-				<div>小</div>
+				<div class="spec">大</div>
+				<div v-bind:class="[isActive4 ? activeClass : 'spec', 'activeSpec']" @click="pitchOn(4)">中</div>
+				<div class="spec">半</div>
+				<div class="spec">小</div>
 			</div>
 		</div>
 		<div class="detail-text">
@@ -51,14 +52,14 @@
 		<div class="detail-pay">
 			<div class="pay-left">
 				<div class="pay-price">
-					<div>￥18</div>
 					<div>￥28</div>
+					<div>￥38</div>
 					<div></div>
 					<div>新人价</div>
 				</div>
-				<div>冰+半糖+无奶油+大杯</div>
+				<div>冰+全糖+无奶油+中杯</div>
 			</div>
-			<div class="now-buy">立即购买</div>
+			<div class="now-buy" @click="toAccount">立即购买</div>
 		</div>
 		<!-- 为你推荐栏 -->
 		<div class="detail-recommend">

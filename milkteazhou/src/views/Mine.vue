@@ -14,10 +14,10 @@
 		<!-- 用户信息栏 -->
 		<div class="mine-msg">
 			<div class="msg-left">
-				<img src="../assets/begin-img.png" width="53.5px" height="59px" />
+				<img src="../assets/me-head-img.jpg" width="53.5px" height="53.5px" style="border-radius: 53.5px;"/>
 				<div class="mine-name">
 					<div class="name">
-						<div>小小昵称</div>
+						<div>星星</div>
 						<div>壹杯新人</div>
 					</div>
 					<div class="msg-id">
