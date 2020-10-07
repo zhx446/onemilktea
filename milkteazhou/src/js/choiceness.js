@@ -59,7 +59,7 @@ export default {
 	methods: {
 		attention(index) {
 			Toast.success('已关注');
-			this.attentionList[index].attenText = '关注';
+			this.attentionList[index].attenText = '已关注';
 		},
 		addZan(index) {
 			this.attentionList[index].commentNum++;
