@@ -37,6 +37,8 @@
 .form-phone div:first-child {
 	margin-right: 30px;
 	margin-left: 3px;
+	width: 80px;
+
 }
 
 .login-btn {

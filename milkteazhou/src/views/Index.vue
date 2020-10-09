@@ -94,7 +94,7 @@
 				<div class="caption-text-right">Seasonal</div>
 			</div>
 			<!-- banner -->
-			<img src="../assets/index-banner4.png" width="355px" height="100.5px" class="index-banner" />
+			<img src="../assets/index-banner4.png" width="100%" height="100.5px" class="index-banner" />
 			<div class="milktea-wrap">
 				<milktea v-for="item in milkteaList" :key="item.id" :milkteaImg="item.milkImg" :milkTitle="item.coffeeTea"
 				:milkEnglist="item.coffeeEng" :milkPrice="item.coffeePrice"></milktea>
@@ -112,7 +112,7 @@
 				<div class="caption-text-right">Popularity</div>
 			</div>
 			<!-- banner -->
-			<img src="../assets/index-banner2.png" width="355px" height="127.5px" class="index-banner" />
+			<img src="../assets/index-banner2.png" width="100%" height="127.5px" class="index-banner" />
 			<div class="milktea-wrap">
 				<milktea v-for="item in milkteaList2" :key="item.id" :milkteaImg="item.milkImg2" :milkTitle="item.coffeeTea2"
 				:milkEnglist="item.coffeeEng2" :milkPrice="item.coffeePrice2"></milktea>
@@ -130,7 +130,7 @@
 				<div class="caption-text-right">blogger</div>
 			</div>
 			<!-- banner -->
-			<img src="../assets/index-banner.png" width="355px" height="127.5px" class="index-banner" />
+			<img src="../assets/index-banner.png" width="100%" height="127.5px" class="index-banner" />
 			<div class="milktea-wrap">
 				<milktea v-for="item in milkteaList3" :key="item.id" :milkteaImg="item.milkImg3" :milkTitle="item.coffeeTea3"
 				:milkEnglist="item.coffeeEng3" :milkPrice="item.coffeePrice3"></milktea>

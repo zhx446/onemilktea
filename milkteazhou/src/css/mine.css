@@ -5,11 +5,16 @@
 
 .van-nav-bar {
 	line-height: 0;
+	width: 100%;
 }
 
 .shoppcar-content {
 	margin-top: 46px;
 	margin-bottom: 60px;
+}
+
+.mine-nav {
+	width: 100%;
 }
 
 /**************** nav strat ****************/

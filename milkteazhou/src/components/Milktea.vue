@@ -76,5 +76,6 @@
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		width: 47%;
 	}
 </style>

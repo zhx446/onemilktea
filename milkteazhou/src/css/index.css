@@ -1,6 +1,7 @@
 /**************** nav strat ****************/
 .menu-nav {
 	margin-bottom: 46px;
+	width: 100%;
 }
 
 .shoppcar-banner img {
@@ -9,6 +10,7 @@
 
 .van-nav-bar {
 	line-height: 0;
+	width: 100%;
 }
 
 .nav-icon-line {
@@ -191,7 +193,7 @@
 	background-color: #ffffff;
 	border-radius: 14px;
 	border: solid 0.5px #f76868;
-	font-size: 4px;
+	font-size: 12px;
 	color: #f76868;
 	text-align: center;
 	padding-bottom: 2px;
@@ -218,10 +220,10 @@
 }
 
 .activity-price div:nth-child(3) {
-	width: 24px;
+	width: 20px;
 	border-bottom: 2px solid #817e7e;
 	margin-left: -23px;
-	margin-bottom: 6px;
+	margin-bottom: 4px;
 }
 
 .activity-swipe {

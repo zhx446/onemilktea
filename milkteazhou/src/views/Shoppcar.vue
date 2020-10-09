@@ -12,7 +12,7 @@
 			</van-nav-bar>
 		</div>
 		<div class="shoppcar-content">
-			<img src="../assets/shoppcar_banner.png" width="355px" height="100.5px" class="shoppcar-banner" />
+			<img src="../assets/shoppcar_banner.png" width="100%" height="100.5px" class="shoppcar-banner" />
 			<!-- 订单列表 -->
 			<div class="shoppcar-order">
 				<div class="order-top">
